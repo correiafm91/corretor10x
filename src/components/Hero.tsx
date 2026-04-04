@@ -32,7 +32,7 @@ const Hero = () => {
           >
             <AlertTriangle className="w-4 h-4 text-foreground" />
             <span className="text-muted-foreground">Inscrições abertas —</span>
-            <span className="text-foreground font-medium">Vagas limitadas para dia 16 de Abril</span>
+            <span className="text-foreground font-medium">Vagas limitadas para dia 12 de Abril</span>
           </motion.div>
 
           <span className="text-foreground font-medium tracking-[0.3em] uppercase text-sm mb-6 block">
