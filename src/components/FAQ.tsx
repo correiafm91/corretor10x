@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 
 const faqs = [
   { q: "O que é o Workshop Corretor 10x?", a: "É um workshop ao vivo criado por Gustavo Correia que ensina corretores de seguros a dominarem marketing, posicionamento e prospecção para escalar seus resultados de forma previsível." },
-  { q: "Quando acontece o workshop?", a: "O workshop ao vivo será no dia 16 de Abril. Um dia intenso com conteúdo prático e aplicável imediatamente." },
+  { q: "Quando acontece o workshop?", a: "O workshop ao vivo será no dia 12 de Abril às 10h da manhã. São 1 hora intensa de aula ao vivo com conteúdo prático e aplicável imediatamente." },
   { q: "Quanto custa?", a: "O investimento é de apenas R$297. Após se inscrever, o link de pagamento será enviado para o seu e-mail." },
   { q: "Preciso ter experiência como corretor?", a: "Não. O método é desenhado tanto para iniciantes que querem começar com o pé direito quanto para corretores experientes que querem escalar seus resultados." },
   { q: "Quanto tempo leva para ver resultados?", a: "Gustavo saiu do zero para mais de R$70 mil em menos de 1 ano. Com as estratégias certas, a maioria dos alunos vê resultados já nas primeiras semanas." },
