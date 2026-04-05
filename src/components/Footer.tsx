@@ -31,23 +31,23 @@ const Footer = () => (
           <h4 className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">Redes Sociais</h4>
           <div className="space-y-2 text-sm font-light">
             <a
-              href="https://instagram.com/corretor10x_"
+              href="https://instagram.com/proestate.br"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
-              <Instagram className="w-4 h-4" /> @corretor10x_
+              <Instagram className="w-4 h-4" /> @proestate.br
             </a>
             <a
-              href="https://youtube.com/@corretor10_"
+              href="https://youtube.com/@proestate1"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
             >
-              <Youtube className="w-4 h-4" /> @corretor10_
+              <Youtube className="w-4 h-4" /> @proestate1
             </a>
             <div className="flex items-center gap-2 text-muted-foreground">
-              <Mail className="w-4 h-4" /> contato@proestate.com.br
+              <Mail className="w-4 h-4" /> contatoproestate@gmail.com
             </div>
           </div>
         </div>
