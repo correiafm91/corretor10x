@@ -3,8 +3,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 
 const faqs = [
   { q: "O que é o Workshop Pro Estate?", a: "É um workshop ao vivo que ensina corretores de imóveis a dominarem marketing, posicionamento e prospecção para escalar seus resultados de forma previsível no mercado imobiliário." },
-  { q: "Quando acontece o workshop?", a: "O workshop ao vivo será no dia 13 de Abril às 10h da manhã. São 1 hora intensa de aula ao vivo com conteúdo prático e aplicável imediatamente." },
-  { q: "Quanto custa?", a: "O investimento é de apenas R$297. Após se inscrever, o link de pagamento será enviado para o seu e-mail." },
+  { q: "Quando acontece o workshop?", a: "O workshop ao vivo será no dia 12 de Abril às 16h da tarde. São 1 hora intensa de aula ao vivo com conteúdo prático e aplicável imediatamente." },
+  { q: "Quanto custa?", a: "O investimento é de apenas R$197. Após se inscrever, o link de pagamento será enviado para o seu e-mail." },
   { q: "Preciso ter experiência como corretor?", a: "Não. O método é desenhado tanto para iniciantes que querem começar com o pé direito quanto para corretores experientes que querem escalar seus resultados." },
   { q: "Quanto tempo leva para ver resultados?", a: "Com as estratégias certas, a maioria dos alunos vê resultados já nas primeiras semanas de aplicação." },
   { q: "Funciona para qualquer tipo de imóvel?", a: "Sim. As estratégias são adaptáveis para imóveis residenciais, comerciais, alto padrão, populares e qualquer segmento. O foco é em marketing e posicionamento." },
