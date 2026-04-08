@@ -21,7 +21,7 @@ const HowItWorks = () => (
           O <span className="text-primary font-normal">Workshop</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          4 pilares estratégicos que você vai dominar no workshop ao vivo do dia 13 de Abril.
+          4 pilares estratégicos que você vai dominar no workshop ao vivo do dia 4 pilares estratégicos que você vai dominar no workshop ao vivo do dia 12 de Abril..
         </p>
       </motion.div>
 

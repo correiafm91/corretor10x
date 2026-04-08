@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 const stats = [
   { value: "+1.000", label: "Corretores Treinados" },
   { value: "10x", label: "Mais Resultados" },
-  { value: "R$297", label: "Investimento" },
+  { value: "R$197", label: "Investimento" },
   { value: "#1", label: "Workshop do Brasil" },
 ];
 
@@ -32,7 +32,7 @@ const Hero = () => {
           >
             <AlertTriangle className="w-4 h-4 text-primary" />
             <span className="text-muted-foreground">Inscrições abertas —</span>
-            <span className="text-primary font-medium">Vagas limitadas para dia 13 de Abril</span>
+            <span className="text-primary font-medium"><span className="text-primary font-medium">Vagas limitadas para dia 12 de Abril</span></span>
           </motion.div>
 
           <div className="flex justify-center mb-8">
@@ -57,7 +57,7 @@ const Hero = () => {
 
           <div className="flex items-center justify-center gap-2 text-primary font-medium mb-10">
             <Clock className="w-5 h-5" />
-            <span>13 de Abril às 10h — 1 hora intensa ao vivo por R$297</span>
+            <span><span>12 de Abril às 16h — 1 hora intensa ao vivo por R$197</span></span>
           </div>
 
           <Button

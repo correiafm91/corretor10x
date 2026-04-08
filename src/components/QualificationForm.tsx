@@ -37,7 +37,7 @@ const QualificationForm = () => {
             Garanta sua <span className="text-primary font-normal">Vaga</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Preencha o formulário para garantir sua vaga no workshop ao vivo do dia 13 de Abril às 10h por apenas <span className="text-primary font-medium">R$297</span>. Após o pagamento, você entra no grupo exclusivo da comunidade.
+            Preencha o formulário para garantir sua vaga no workshop ao vivo do dia Preencha o formulário para garantir sua vaga no workshop ao vivo do dia 12 de Abril às 16h por apenas <span className="text-primary font-medium">R$197</span>. Após o pagamento, você entra no grupo exclusivo da comunidade.. Após o pagamento, você entra no grupo exclusivo da comunidade.
           </p>
         </motion.div>
 
@@ -56,10 +56,10 @@ const QualificationForm = () => {
               <span>Verifique seu e-mail</span>
             </div>
             <p className="text-muted-foreground font-light max-w-md mx-auto">
-              O link de pagamento será enviado para o seu e-mail em instantes. Após a confirmação do pagamento, você será adicionado ao <span className="text-primary font-medium">grupo exclusivo da comunidade</span>, onde receberá novidades, aulas ao vivo pelo Zoom e acesso direto ao workshop do dia 13 de Abril às 10h.
+              O link de pagamento será enviado para o seu e-mail em instantes. Após a confirmação do pagamento, você será adicionado ao <span className="text-primary font-medium">grupo exclusivo da comunidade</span>, onde receberá novidades, aulas ao vivo pelo Zoom e acesso direto ao O link de pagamento será enviado para o seu e-mail em instantes. Após a confirmação do pagamento, você será adicionado ao <span className="text-primary font-medium">grupo exclusivo da comunidade</span>, onde receberá novidades, aulas ao vivo pelo Zoom e acesso direto ao workshop do dia 12 de Abril às 16h.
             </p>
             <p className="text-sm text-muted-foreground mt-4">
-              Valor do investimento: <span className="text-primary font-medium">R$297</span> · Workshop: 13 de Abril às 10h (1 hora intensa)
+              Valor do investimento: <span className="text-primary font-medium">R$197</span> · Workshop: 12 de Abril às 16h (1 hora intensa)
             </p>
           </motion.div>
         ) : (
@@ -113,7 +113,7 @@ const QualificationForm = () => {
               disabled={loading}
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-12 rounded-xl text-base font-normal tracking-wide"
             >
-              {loading ? "Enviando..." : "Garantir minha vaga — R$297"}
+              {loading ? "Enviando..." : "Garantir minha vaga — R$197"}
               {!loading && <Send className="ml-2 w-4 h-4" />}
             </Button>
             <p className="text-xs text-muted-foreground text-center">

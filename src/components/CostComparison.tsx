@@ -110,7 +110,7 @@ const CostComparison = () => {
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 text-center">
               <p className="text-sm text-muted-foreground mb-1">Custo mensal de operação</p>
               <p className="text-3xl font-light text-primary">R$ 0</p>
-              <p className="text-xs text-muted-foreground mt-1">Investimento único de R$297 no workshop</p>
+              <p className="text-xs text-muted-foreground mt-1"><p className="text-xs text-muted-foreground mt-1">Investimento único de R$197 no workshop</p></p>
             </div>
           </motion.div>
         </div>
