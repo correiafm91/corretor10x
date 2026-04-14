@@ -3,40 +3,40 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Carlos Mendes",
-    role: "Corretor de Seguros - SP",
+    name: "Lucas Martins",
+    role: "Corretor de Imóveis - SP",
     stars: 5,
-    text: "Em 3 meses tripliquei minhas vendas de seguros. As estratégias da Corretor 10x são simples e funcionam de verdade.",
+    text: "Em 3 meses saí do zero para R$28 mil em comissões. As estratégias da Pro Estate são diretas ao ponto e funcionam de verdade.",
   },
   {
-    name: "Patrícia Lima",
-    role: "Corretora de Seguros - RJ",
+    name: "Fernanda Oliveira",
+    role: "Corretora de Imóveis - RJ",
     stars: 5,
-    text: "O diagnóstico gratuito já abriu meus olhos. Depois da consultoria, meus clientes passaram a me procurar ao invés de eu correr atrás.",
+    text: "Finalmente aprendi a me posicionar no digital. Meus clientes agora vêm até mim, não preciso mais ficar implorando indicações.",
   },
   {
-    name: "Roberto Alves",
-    role: "Corretor de Seguros - MG",
+    name: "Ricardo Santos",
+    role: "Corretor de Imóveis - MG",
     stars: 5,
-    text: "Saí do zero e em 4 meses já faturava R$25 mil por mês. O posicionamento que aprendi fez toda a diferença.",
+    text: "O workshop mudou minha visão sobre o mercado. Hoje faturo 10x mais do que antes e tenho uma carteira sólida de clientes.",
   },
   {
-    name: "Camila Torres",
-    role: "Corretora de Seguros - PR",
+    name: "Ana Paula Costa",
+    role: "Corretora de Imóveis - PR",
     stars: 5,
-    text: "As estratégias são muito fáceis de implementar e baratas. Nunca imaginei que marketing pudesse ser tão acessível.",
+    text: "As estratégias de prospecção digital são um divisor de águas. Nunca mais dependi só de indicação para fechar vendas.",
   },
   {
-    name: "André Souza",
-    role: "Corretor de Seguros - BA",
+    name: "Marcos Ferreira",
+    role: "Corretor de Imóveis - BA",
     stars: 5,
-    text: "A Corretor 10x me ensinou a usar as redes sociais de forma estratégica. Hoje sou referência na minha região.",
+    text: "Do zero a R$32 mil em 4 meses. A Pro Estate ensina o que nenhuma imobiliária vai te ensinar sobre marketing.",
   },
   {
-    name: "Mariana Costa",
-    role: "Corretora de Seguros - SC",
+    name: "Juliana Almeida",
+    role: "Corretora de Imóveis - SC",
     stars: 5,
-    text: "O melhor investimento que fiz na minha carreira. Em 2 meses já tinha recuperado o investimento e triplicado minhas vendas.",
+    text: "O conteúdo é claro, prático e funciona. Hoje sou referência na minha cidade graças ao posicionamento que aprendi.",
   },
 ];
 
@@ -50,10 +50,10 @@ const Testimonials = () => (
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-          O que dizem nossos <span className="text-primary font-normal">Clientes</span>
+          O que dizem nossos <span className="text-primary font-normal">Alunos</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Corretores de seguros que triplicaram suas vendas com nossas estratégias.
+          Corretores que participaram do workshop e transformaram suas carreiras no mercado imobiliário.
         </p>
       </motion.div>
 
