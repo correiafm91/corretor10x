@@ -33,7 +33,7 @@ const QualificationForm = () => {
             Solicite seu <span className="text-primary font-normal">Diagnóstico Gratuito</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Preencha o formulário e nossa equipe entrará em contato para realizar um diagnóstico completo do seu posicionamento e criar uma estratégia personalizada para você.
+            Preencha o formulário e nossa equipe entrará em contato para realizar um diagnóstico completo da sua abordagem comercial e criar uma estratégia de vendas personalizada para você.
           </p>
         </motion.div>
 
@@ -52,7 +52,7 @@ const QualificationForm = () => {
               <span>Verifique seu e-mail</span>
             </div>
             <p className="text-muted-foreground font-light max-w-md mx-auto">
-              Nossa equipe analisará suas informações e entrará em contato em breve com o seu diagnóstico gratuito e uma proposta de consultoria personalizada.
+              Nossa equipe analisará suas informações e entrará em contato em breve com o seu diagnóstico gratuito e uma proposta de consultoria de vendas personalizada.
             </p>
           </motion.div>
         ) : (

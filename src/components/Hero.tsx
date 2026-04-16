@@ -44,20 +44,20 @@ const Hero = () => {
           </div>
 
           <span className="text-primary font-medium tracking-[0.3em] uppercase text-sm mb-6 block">
-            Pro Estate — Consultoria de Marketing para Corretores de Imóveis
+            Pro Estate — Consultoria de Vendas para Corretores de Imóveis
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight leading-tight mb-6">
-            Estratégias de{" "}
-            <span className="text-primary font-normal">marketing imobiliário</span>{" "}
-            para você se destacar
+            Torne-se um{" "}
+            <span className="text-primary font-normal">vendedor persuasivo</span>{" "}
+            de alta performance
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl font-light max-w-2xl mx-auto mb-4">
-            Nossa equipe cria estratégias personalizadas de marketing e posicionamento para corretores de imóveis que querem dominar o mercado. Comece com um diagnóstico gratuito.
+            Nossa equipe transforma corretores comuns em vendedores persuasivos de alta performance, com técnicas avançadas de negociação, persuasão e fechamento. Comece com um diagnóstico gratuito.
           </p>
 
           <div className="flex items-center justify-center gap-2 text-primary font-medium mb-10">
             <ShieldCheck className="w-5 h-5" />
-            <span>Diagnóstico gratuito · Consultoria personalizada · Resultados comprovados</span>
+            <span>Diagnóstico gratuito · Consultoria de vendas personalizada · Resultados comprovados</span>
           </div>
 
           <Button

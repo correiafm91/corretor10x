@@ -16,7 +16,7 @@ const Footer = () => (
             </h3>
           </div>
           <p className="text-sm text-muted-foreground font-light leading-relaxed">
-            A maior consultoria de marketing para corretores de imóveis do Brasil. Estratégias personalizadas de posicionamento para o mercado imobiliário.
+            A maior consultoria de vendas para corretores de imóveis do Brasil. Transformamos corretores em vendedores persuasivos de alta performance.
           </p>
         </div>
         <div>

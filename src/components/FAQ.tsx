@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 
 const faqs = [
-  { q: "O que é a Pro Estate?", a: "A Pro Estate é uma consultoria especializada em marketing e posicionamento para corretores de imóveis. Nossa equipe cria estratégias personalizadas para você se destacar no mercado imobiliário." },
-  { q: "Como funciona o diagnóstico gratuito?", a: "Você preenche o formulário com suas informações e nossa equipe analisa seu posicionamento atual, identificando oportunidades de crescimento. Em seguida, entramos em contato com um plano personalizado." },
-  { q: "Preciso ter experiência como corretor?", a: "Não. Nossas estratégias são desenhadas tanto para iniciantes que querem começar com o pé direito quanto para corretores experientes que querem escalar seus resultados." },
-  { q: "Quanto tempo leva para ver resultados?", a: "Com as estratégias certas, a maioria dos nossos clientes vê resultados já nas primeiras semanas de aplicação. Em 3 meses, é possível sair do zero a R$30 mil em comissões." },
-  { q: "Funciona para qualquer tipo de imóvel?", a: "Sim. As estratégias são adaptáveis para imóveis residenciais, comerciais, alto padrão, populares e qualquer segmento. O foco é em marketing e posicionamento." },
-  { q: "O que é o grupo da comunidade?", a: "É um grupo exclusivo para clientes da Pro Estate onde compartilhamos novidades, estratégias e realizamos aulas ao vivo pelo Zoom. Você entra no grupo ao contratar a consultoria." },
-  { q: "Quanto custa a consultoria?", a: "O diagnóstico inicial é 100% gratuito. Após a análise, apresentamos uma proposta personalizada de consultoria adequada às suas necessidades e objetivos." },
+  { q: "O que é a Pro Estate?", a: "A Pro Estate é uma consultoria de vendas especializada em corretores de imóveis. Transformamos corretores comuns em vendedores persuasivos de alta performance através de técnicas avançadas de negociação, persuasão e fechamento." },
+  { q: "Como funciona o diagnóstico gratuito?", a: "Você preenche o formulário com suas informações e nossa equipe analisa sua abordagem comercial atual, identificando os gargalos que impedem o fechamento de mais vendas. Em seguida, entramos em contato com um plano personalizado." },
+  { q: "Preciso ter experiência como corretor?", a: "Não. Nossas técnicas de vendas são desenhadas tanto para iniciantes quanto para corretores experientes que querem dominar a arte da persuasão e fechar mais negócios." },
+  { q: "Quanto tempo leva para ver resultados?", a: "Aplicando as técnicas de vendas corretas, a maioria dos nossos clientes vê resultados já nas primeiras semanas. Em 3 meses, é possível sair do zero a R$30 mil em comissões." },
+  { q: "Funciona para qualquer tipo de imóvel?", a: "Sim. As técnicas de vendas, persuasão e fechamento são adaptáveis para imóveis residenciais, comerciais, alto padrão, populares e qualquer segmento." },
+  { q: "O que é o grupo da comunidade?", a: "É um grupo exclusivo para clientes da Pro Estate onde compartilhamos novidades, técnicas de vendas e realizamos aulas ao vivo pelo Zoom. Você entra no grupo ao contratar a consultoria." },
+  { q: "Quanto custa a consultoria?", a: "O diagnóstico inicial é 100% gratuito. Após a análise, apresentamos uma proposta personalizada de consultoria de vendas adequada às suas necessidades e objetivos." },
 ];
 
 const FAQ = () => (

@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Search, Target, BarChart3, Rocket } from "lucide-react";
 
 const steps = [
-  { icon: Search, title: "Diagnóstico", description: "Analisamos seu posicionamento atual e identificamos oportunidades de crescimento no mercado imobiliário." },
-  { icon: Target, title: "Estratégia", description: "Criamos um plano personalizado de marketing e posicionamento para atrair clientes qualificados." },
-  { icon: BarChart3, title: "Implementação", description: "Nossa equipe orienta a execução das estratégias de conteúdo, anúncios e presença digital." },
-  { icon: Rocket, title: "Resultados", description: "Acompanhamos seus resultados e ajustamos as estratégias para maximizar suas comissões." },
+  { icon: Search, title: "Diagnóstico", description: "Analisamos sua abordagem comercial atual e identificamos os gargalos que impedem o fechamento de mais vendas." },
+  { icon: Target, title: "Estratégia", description: "Criamos um plano personalizado de vendas com técnicas de persuasão, quebra de objeções e fechamento." },
+  { icon: BarChart3, title: "Implementação", description: "Nossa equipe treina você na execução prática das técnicas de negociação e abordagem de alta performance." },
+  { icon: Rocket, title: "Resultados", description: "Acompanhamos seu desempenho em vendas e ajustamos a estratégia para maximizar suas comissões." },
 ];
 
 const HowItWorks = () => (
@@ -18,10 +18,10 @@ const HowItWorks = () => (
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-          Como funciona a <span className="text-primary font-normal">Consultoria</span>
+          Como funciona a <span className="text-primary font-normal">Consultoria de Vendas</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          4 etapas para transformar seu posicionamento e escalar seus resultados no mercado imobiliário.
+          4 etapas para transformar você em um vendedor persuasivo de alta performance no mercado imobiliário.
         </p>
       </motion.div>
 
