@@ -33,18 +33,18 @@ const About = () => (
             Sobre a Pro Estate
           </span>
           <h2 className="text-3xl md:text-4xl font-extralight mb-6 leading-tight">
-            A maior consultoria para{" "}
+            A maior consultoria de vendas para{" "}
             <span className="text-primary font-normal">corretores de imóveis</span> do Brasil
           </h2>
           <div className="space-y-4 text-muted-foreground font-light leading-relaxed">
             <p>
-              A Pro Estate nasceu da necessidade real do mercado imobiliário: corretores precisam de estratégias modernas de marketing e posicionamento para se destacar em um mercado cada vez mais competitivo.
+              A Pro Estate nasceu da necessidade real do mercado imobiliário: corretores precisam dominar técnicas avançadas de vendas, persuasão e negociação para fechar mais negócios em um mercado cada vez mais competitivo.
             </p>
             <p>
-              Com mais de 1.000 corretores atendidos em todo o Brasil, a Pro Estate se tornou referência em consultoria de marketing para o mercado imobiliário — transformando profissionais comuns em referências do mercado.
+              Com mais de 1.000 corretores atendidos em todo o Brasil, a Pro Estate se tornou referência em consultoria de vendas para o mercado imobiliário — transformando corretores comuns em vendedores persuasivos de alta performance.
             </p>
             <p>
-              Nossa equipe cria estratégias personalizadas de marketing digital, posicionamento e prospecção para corretores que querem escalar seus resultados e se tornarem autoridades na sua região.
+              Nossa equipe desenvolve corretores com técnicas comprovadas de abordagem, quebra de objeções, gatilhos mentais e fechamento — para que você venda mais, mais rápido e com tickets cada vez maiores.
             </p>
           </div>
 

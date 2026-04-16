@@ -4,17 +4,17 @@ import { X, Check, DollarSign, TrendingDown, TrendingUp } from "lucide-react";
 const traditional = [
   { item: "Tráfego pago (Google/Meta Ads)", cost: "R$ 2.000/mês" },
   { item: "Social Media Manager", cost: "R$ 1.500/mês" },
-  { item: "Fotógrafo profissional", cost: "R$ 800/mês" },
-  { item: "Editor de vídeo", cost: "R$ 1.200/mês" },
+  { item: "Cursos avulsos de vendas", cost: "R$ 800/mês" },
+  { item: "Coach comercial individual", cost: "R$ 1.200/mês" },
   { item: "Agência de marketing", cost: "R$ 3.000/mês" },
 ];
 
 const proEstate = [
-  { item: "Estratégia de conteúdo orgânico", cost: "R$ 0" },
-  { item: "Posicionamento nas redes sociais", cost: "R$ 0" },
-  { item: "Técnicas de prospecção digital", cost: "R$ 0" },
-  { item: "Marketing pessoal estratégico", cost: "R$ 0" },
-  { item: "Método completo Pro Estate", cost: "R$ 0" },
+  { item: "Técnicas de abordagem persuasiva", cost: "R$ 0" },
+  { item: "Quebra de objeções avançada", cost: "R$ 0" },
+  { item: "Gatilhos mentais para fechamento", cost: "R$ 0" },
+  { item: "Negociação de alta performance", cost: "R$ 0" },
+  { item: "Método de vendas Pro Estate", cost: "R$ 0" },
 ];
 
 const CostComparison = () => {
@@ -30,10 +30,10 @@ const CostComparison = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-            Marketing Tradicional <span className="text-primary font-normal">vs Pro Estate</span>
+            Método Tradicional <span className="text-primary font-normal">vs Pro Estate</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Veja quanto um corretor gasta com marketing tradicional versus o que ensinamos no nosso método — com custo zero de operação.
+            Veja quanto um corretor gasta tentando vender mais com soluções caras versus dominar técnicas de vendas persuasivas — com custo zero de operação.
           </p>
         </motion.div>
 
@@ -49,7 +49,7 @@ const CostComparison = () => {
                 <TrendingDown className="w-6 h-6 text-destructive" strokeWidth={1.5} />
               </div>
               <div>
-                <h3 className="text-xl font-light">Marketing Tradicional</h3>
+                <h3 className="text-xl font-light">Método Tradicional</h3>
                 <p className="text-sm text-muted-foreground">Custos mensais recorrentes</p>
               </div>
             </div>
@@ -89,7 +89,7 @@ const CostComparison = () => {
               </div>
               <div>
                 <h3 className="text-xl font-light">Método Pro Estate</h3>
-                <p className="text-sm text-muted-foreground">Estratégias com custo zero</p>
+                <p className="text-sm text-muted-foreground">Técnicas de vendas com custo zero</p>
               </div>
             </div>
 
@@ -124,7 +124,7 @@ const CostComparison = () => {
             <span className="text-lg font-light">Economia de mais de <span className="text-primary font-medium">R$ 100.000/ano</span></span>
           </div>
           <p className="text-sm text-muted-foreground">
-            Com o Método Pro Estate, você aprende a gerar resultados sem depender de agências, tráfego pago ou equipes caras.
+            Com o Método Pro Estate, você aprende a vender mais usando técnicas de persuasão e fechamento — sem depender de agências, tráfego pago ou cursos caros.
           </p>
         </motion.div>
       </div>
