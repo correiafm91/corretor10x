@@ -9,7 +9,7 @@ const Footer = () => (
             Corretor <span className="text-foreground font-normal">10x</span>
           </h3>
           <p className="text-sm text-muted-foreground font-light leading-relaxed">
-            O maior workshop para corretores de seguros do Brasil. Estratégias de marketing e posicionamento por Gustavo Correia.
+            O maior workshop para corretores de seguros do Brasil. Estratégias de marketing e posicionamento para escalar sua corretora.
           </p>
         </div>
         <div>
