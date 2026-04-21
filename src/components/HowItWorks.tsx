@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Search, Target, BarChart3, Rocket } from "lucide-react";
 
 const steps = [
-  { icon: Search, title: "Diagnóstico", description: "Analisamos sua abordagem comercial atual e identificamos os gargalos que impedem o fechamento de mais vendas." },
-  { icon: Target, title: "Estratégia", description: "Criamos um plano personalizado de vendas com técnicas de persuasão, quebra de objeções e fechamento." },
-  { icon: BarChart3, title: "Implementação", description: "Nossa equipe treina você na execução prática das técnicas de negociação e abordagem de alta performance." },
-  { icon: Rocket, title: "Resultados", description: "Acompanhamos seu desempenho em vendas e ajustamos a estratégia para maximizar suas comissões." },
+  { icon: Search, title: "Posicionamento", description: "Aprenda a se posicionar como autoridade no mercado de seguros e atrair clientes qualificados." },
+  { icon: Target, title: "Prospecção", description: "Domine técnicas de prospecção ativa e digital para nunca mais depender de indicações." },
+  { icon: BarChart3, title: "Marketing", description: "Crie uma presença digital irresistível com estratégias de conteúdo, anúncios e redes sociais." },
+  { icon: Rocket, title: "Fechamento", description: "Converta mais propostas em vendas com técnicas avançadas de negociação e follow-up." },
 ];
 
 const HowItWorks = () => (
@@ -18,10 +18,10 @@ const HowItWorks = () => (
         className="text-center mb-16"
       >
         <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-          Como funciona a <span className="text-primary font-normal">Consultoria de Vendas</span>
+          O <span className="text-foreground font-normal">Workshop</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          4 etapas para transformar você em um vendedor persuasivo de alta performance no mercado imobiliário.
+          4 pilares estratégicos que você vai dominar no workshop ao vivo do dia 16 de Abril.
         </p>
       </motion.div>
 
@@ -35,11 +35,11 @@ const HowItWorks = () => (
             transition={{ delay: i * 0.15 }}
             className="text-center group"
           >
-            <div className="w-16 h-16 rounded-2xl border border-border bg-card flex items-center justify-center mx-auto mb-5 group-hover:border-primary/50 transition-colors">
-              <step.icon className="w-7 h-7 text-primary" strokeWidth={1.5} />
+            <div className="w-16 h-16 rounded-2xl border border-border bg-card flex items-center justify-center mx-auto mb-5 group-hover:border-foreground/50 transition-colors">
+              <step.icon className="w-7 h-7 text-foreground" strokeWidth={1.5} />
             </div>
-            <div className="text-xs text-primary font-medium tracking-widest uppercase mb-2">
-              Etapa {i + 1}
+            <div className="text-xs text-foreground font-medium tracking-widest uppercase mb-2">
+              Pilar {i + 1}
             </div>
             <h3 className="text-xl font-light mb-2">{step.title}</h3>
             <p className="text-sm text-muted-foreground font-light">{step.description}</p>
