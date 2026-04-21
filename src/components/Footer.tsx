@@ -9,13 +9,13 @@ const Footer = () => (
             Corretor <span className="text-foreground font-normal">10x</span>
           </h3>
           <p className="text-sm text-muted-foreground font-light leading-relaxed">
-            O maior workshop para corretores de seguros do Brasil. Estratégias de marketing e posicionamento por Gustavo Correia.
+            O maior workshop para corretores de seguros do Brasil. Estratégias de marketing e posicionamento para escalar sua corretora.
           </p>
         </div>
         <div>
           <h4 className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">Links</h4>
           <ul className="space-y-2 text-sm font-light">
-            <li><a href="#sobre" className="hover:text-foreground transition-colors">Sobre Gustavo</a></li>
+            <li><a href="#sobre" className="hover:text-foreground transition-colors">Sobre</a></li>
             <li><a href="#faq" className="hover:text-foreground transition-colors">FAQ</a></li>
             <li><a href="#formulario" className="hover:text-foreground transition-colors">Inscreva-se</a></li>
           </ul>
@@ -46,7 +46,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-border mt-10 pt-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Corretor 10x — Gustavo Correia. Todos os direitos reservados.
+        © {new Date().getFullYear()} Corretor 10x. Todos os direitos reservados.
       </div>
     </div>
   </footer>
