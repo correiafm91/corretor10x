@@ -46,7 +46,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="border-t border-border mt-10 pt-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Corretor 10x — Gustavo Correia. Todos os direitos reservados.
+        © {new Date().getFullYear()} Corretor 10x. Todos os direitos reservados.
       </div>
     </div>
   </footer>
