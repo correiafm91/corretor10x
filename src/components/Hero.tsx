@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Clock, AlertTriangle } from "lucide-react";
+import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 
 const stats = [
-  { value: "+1.000", label: "Corretores Treinados" },
+  { value: "+1.000", label: "Corretores Atendidos" },
+  { value: "10x", label: "Crescimento Médio" },
   { value: "70k+", label: "Faturados em 1 Ano" },
-  { value: "R$197", label: "Investimento" },
-  { value: "#1", label: "Workshop do Brasil" },
+  { value: "#1", label: "Consultoria do Brasil" },
 ];
 
 const Hero = () => {
@@ -30,26 +30,26 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-primary/30 bg-primary/10 mb-8 text-sm"
           >
-            <AlertTriangle className="w-4 h-4 text-primary" />
-            <span className="text-muted-foreground">Inscrições abertas —</span>
-            <span className="text-primary font-medium">Vagas limitadas para 2 de Maio</span>
+            <Sparkles className="w-4 h-4 text-primary" />
+            <span className="text-muted-foreground">Maior consultoria de vendas para</span>
+            <span className="text-primary font-medium">corretores de seguros do Brasil</span>
           </motion.div>
 
           <span className="text-primary font-medium tracking-[0.3em] uppercase text-sm mb-6 block">
-            Workshop Corretor 10x
+            Consultoria Corretor 10x
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight leading-tight mb-6">
-            Do zero a{" "}
-            <span className="text-primary font-normal">R$70 mil</span>{" "}
-            como corretor de seguros
+            Multiplique suas vendas como{" "}
+            <span className="text-primary font-normal">corretor de seguros</span>
           </h1>
-          <p className="text-muted-foreground text-lg md:text-xl font-light max-w-2xl mx-auto mb-4">
-            O maior workshop ao vivo para corretores de seguros do Brasil. Aprenda as estratégias de marketing e posicionamento que vão te destacar no mercado.
+          <p className="text-muted-foreground text-lg md:text-xl font-light max-w-2xl mx-auto mb-8">
+            Consultoria estratégica 1 a 1 para corretores que querem escalar suas vendas com método, posicionamento e prospecção previsível.
           </p>
 
-          <div className="flex items-center justify-center gap-2 text-primary font-medium mb-10">
-            <Clock className="w-5 h-5" />
-            <span>2 de Maio às 14:30 — 1 hora intensa ao vivo por R$197</span>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground mb-10">
+            <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Diagnóstico gratuito</div>
+            <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Plano personalizado</div>
+            <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Resultados em 90 dias</div>
           </div>
 
           <Button
@@ -57,7 +57,7 @@ const Hero = () => {
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-10 py-6 text-base font-normal tracking-wide group"
           >
-            Garantir minha vaga agora
+            Quero meu diagnóstico gratuito
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </motion.div>

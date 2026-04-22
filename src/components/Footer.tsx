@@ -9,15 +9,17 @@ const Footer = () => (
             Corretor <span className="text-foreground font-normal">10x</span>
           </h3>
           <p className="text-sm text-muted-foreground font-light leading-relaxed">
-            O maior workshop para corretores de seguros do Brasil. Estratégias de marketing e posicionamento para escalar sua corretora.
+            A maior consultoria de vendas para corretores de seguros do Brasil. Estratégia, posicionamento e prospecção para multiplicar suas comissões.
           </p>
         </div>
         <div>
           <h4 className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">Links</h4>
           <ul className="space-y-2 text-sm font-light">
-            <li><a href="#sobre" className="hover:text-foreground transition-colors">Sobre</a></li>
-            <li><a href="#faq" className="hover:text-foreground transition-colors">FAQ</a></li>
-            <li><a href="#formulario" className="hover:text-foreground transition-colors">Inscreva-se</a></li>
+            <li><a href="#sobre" className="hover:text-primary transition-colors">Sobre</a></li>
+            <li><a href="#etapas" className="hover:text-primary transition-colors">Etapas</a></li>
+            <li><a href="#depoimentos" className="hover:text-primary transition-colors">Depoimentos</a></li>
+            <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
+            <li><a href="#formulario" className="hover:text-primary transition-colors">Diagnóstico gratuito</a></li>
           </ul>
         </div>
         <div>

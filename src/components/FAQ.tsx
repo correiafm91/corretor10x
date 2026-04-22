@@ -1,52 +1,76 @@
 import { motion } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+import { Button } from "./ui/button";
 
 const faqs = [
-  { q: "O que é o Workshop Corretor 10x?", a: "É um workshop ao vivo que ensina corretores de seguros a dominarem marketing, posicionamento e prospecção para escalar seus resultados de forma previsível." },
-  { q: "Quando acontece o workshop?", a: "O workshop ao vivo será no dia 2 de Maio às 14:30. São 1 hora intensa de aula ao vivo com conteúdo prático e aplicável imediatamente." },
-  { q: "Quanto custa?", a: "O investimento é de apenas R$197. Após se inscrever, o link de pagamento será enviado para o seu e-mail." },
-  { q: "Preciso ter experiência como corretor?", a: "Não. O método é desenhado tanto para iniciantes que querem começar com o pé direito quanto para corretores experientes que querem escalar seus resultados." },
-  { q: "Quanto tempo leva para ver resultados?", a: "Com as estratégias certas, a maioria dos alunos vê resultados já nas primeiras semanas após aplicar o método." },
-  { q: "Funciona para qualquer tipo de seguro?", a: "Sim. As estratégias são adaptáveis para seguro auto, vida, saúde, empresarial, residencial e qualquer outro ramo. O foco é em marketing e posicionamento." },
-  { q: "As vagas são limitadas?", a: "Sim. Para garantir a qualidade do workshop e atenção individual, as vagas são limitadas. Inscreva-se antes que acabem." },
-  { q: "Como recebo o acesso?", a: "Após a inscrição, o link de pagamento será enviado para o seu e-mail. Após a confirmação do pagamento, você será adicionado ao grupo exclusivo da comunidade, onde receberá novidades, aulas ao vivo pelo Zoom e o acesso ao workshop." },
-  { q: "O que é o grupo da comunidade?", a: "É um grupo exclusivo para alunos do Corretor 10x onde compartilhamos novidades, estratégias e realizamos aulas ao vivo pelo Zoom. Você entra no grupo assim que confirmar o pagamento." },
+  { q: "O que é a Consultoria Corretor 10x?", a: "É uma consultoria de vendas estratégica e personalizada para corretores de seguros que querem escalar suas comissões com método, posicionamento e prospecção previsível — sem depender só de indicação." },
+  { q: "Como funciona o diagnóstico gratuito?", a: "Você preenche o formulário com informações sobre sua operação atual. Em seguida, nosso time entra em contato para uma conversa onde identificamos seus principais gargalos e mostramos como a consultoria pode acelerar seus resultados." },
+  { q: "Para quem é a consultoria?", a: "Para corretores de seguros iniciantes que querem começar com o pé direito e para corretores experientes que querem escalar de forma previsível. Adaptamos o plano à sua realidade." },
+  { q: "Quanto tempo leva para ver resultados?", a: "A maioria dos corretores começa a ver melhorias nas primeiras semanas de aplicação. Resultados consistentes e expressivos costumam aparecer entre 60 e 90 dias." },
+  { q: "Funciona para qualquer ramo de seguro?", a: "Sim. As estratégias são adaptáveis para auto, vida, saúde, empresarial, residencial e qualquer outro ramo. O foco está em vendas, marketing e posicionamento." },
+  { q: "Como é o acompanhamento?", a: "Você recebe mentoria contínua, scripts de vendas, materiais prontos, plano de prospecção e acompanhamento dos seus indicadores semana a semana." },
+  { q: "Quanto custa a consultoria?", a: "O investimento varia conforme o plano ideal para o seu momento. O valor é apresentado durante o diagnóstico gratuito, depois de entendermos sua realidade." },
+  { q: "As vagas são limitadas?", a: "Sim. Para garantir qualidade e atenção individual, atendemos um número limitado de corretores por mês. Solicite seu diagnóstico antes de fecharmos a agenda." },
 ];
 
-const FAQ = () => (
-  <section className="py-24 px-6" id="faq">
-    <div className="container mx-auto max-w-3xl">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="text-center mb-16"
-      >
-        <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-          Perguntas <span className="text-foreground font-normal">Frequentes</span>
-        </h2>
-      </motion.div>
+const FAQ = () => {
+  const scrollToForm = () => {
+    document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
+  };
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <Accordion type="single" collapsible className="space-y-3">
-          {faqs.map((faq, i) => (
-            <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-xl px-6 bg-card">
-              <AccordionTrigger className="text-left font-light hover:no-underline hover:text-foreground transition-colors">
-                {faq.q}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground font-light leading-relaxed">
-                {faq.a}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </motion.div>
-    </div>
-  </section>
-);
+  return (
+    <section className="py-24 px-6" id="faq">
+      <div className="container mx-auto max-w-3xl">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4 block">
+            Tire suas dúvidas
+          </span>
+          <h2 className="text-3xl md:text-5xl font-extralight mb-4">
+            Perguntas <span className="text-primary font-normal">Frequentes</span>
+          </h2>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <Accordion type="single" collapsible className="space-y-3">
+            {faqs.map((faq, i) => (
+              <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-xl px-6 bg-card">
+                <AccordionTrigger className="text-left font-light hover:no-underline hover:text-primary transition-colors">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground font-light leading-relaxed">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <Button
+            onClick={scrollToForm}
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-10 py-6 text-base"
+          >
+            Quero meu diagnóstico gratuito
+          </Button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
 export default FAQ;

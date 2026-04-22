@@ -1,47 +1,53 @@
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
     name: "Lucas Martins",
-    role: "Corretor de Seguros - SP",
+    role: "Corretor Auto/Vida — SP",
     stars: 5,
-    text: "Em 3 meses saí do zero para R$28 mil em comissões. As estratégias do Gustavo são diretas ao ponto e funcionam de verdade.",
+    result: "+R$28k em 3 meses",
+    text: "A consultoria do Corretor 10x reorganizou toda minha operação. Em 3 meses saí do zero a R$28 mil em comissões com método e previsibilidade.",
   },
   {
     name: "Fernanda Oliveira",
-    role: "Corretora de Seguros - RJ",
+    role: "Corretora Saúde — RJ",
     stars: 5,
-    text: "Finalmente aprendi a me posicionar no digital. Meus clientes agora vêm até mim, não preciso mais ficar implorando indicações.",
+    result: "Triplicou a carteira",
+    text: "Aprendi a me posicionar como autoridade. Hoje meus clientes me procuram, não preciso mais correr atrás de indicações para fechar venda.",
   },
   {
     name: "Ricardo Santos",
-    role: "Corretor de Seguros - MG",
+    role: "Corretor Empresarial — MG",
     stars: 5,
-    text: "O workshop mudou minha visão sobre o mercado. Hoje faturo 10x mais do que antes e tenho uma carteira sólida.",
+    result: "10x em comissões",
+    text: "Mudou minha visão sobre o mercado de seguros. Faturo 10x mais do que antes e construí uma carteira sólida e recorrente.",
   },
   {
     name: "Ana Paula Costa",
-    role: "Corretora de Seguros - PR",
+    role: "Corretora Vida — PR",
     stars: 5,
-    text: "As estratégias de prospecção digital são um divisor de águas. Nunca mais dependi só de indicação para vender.",
+    result: "+R$22k mensais",
+    text: "As estratégias de prospecção digital são um divisor de águas. Nunca mais dependi só de indicação para vender seguros.",
   },
   {
     name: "Marcos Ferreira",
-    role: "Corretor de Seguros - BA",
+    role: "Corretor Multi-ramos — BA",
     stars: 5,
-    text: "Do zero a R$32 mil em 4 meses. O Gustavo ensina o que nenhuma seguradora vai te ensinar sobre marketing.",
+    result: "+R$32k em 4 meses",
+    text: "A consultoria me deu o que nenhuma seguradora ensina: marketing, posicionamento e fechamento de alto valor.",
   },
   {
     name: "Juliana Almeida",
-    role: "Corretora de Seguros - SC",
+    role: "Corretora Residencial — SC",
     stars: 5,
-    text: "O conteúdo é claro, prático e funciona. Hoje sou referência na minha cidade graças ao posicionamento que aprendi.",
+    result: "Referência regional",
+    text: "Conteúdo claro, prático e que funciona. Hoje sou referência na minha cidade graças ao posicionamento que construímos juntos.",
   },
 ];
 
 const Testimonials = () => (
-  <section className="py-24 px-6 bg-secondary/30">
+  <section className="py-24 px-6 bg-secondary/30" id="depoimentos">
     <div className="container mx-auto max-w-6xl">
       <motion.div
         initial={{ opacity: 0 }}
@@ -49,11 +55,14 @@ const Testimonials = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
+        <span className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4 block">
+          Resultados Reais
+        </span>
         <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-          O que dizem nossos <span className="text-foreground font-normal">Alunos</span>
+          Corretores que <span className="text-primary font-normal">Multiplicaram</span> suas vendas
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Corretores que participaram do workshop e transformaram suas carreiras.
+          Mais de 1.000 corretores transformaram seus resultados com a consultoria.
         </p>
       </motion.div>
 
@@ -64,17 +73,21 @@ const Testimonials = () => (
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
-            className="bg-card border border-border rounded-xl p-6 hover:border-foreground/30 transition-colors"
+            transition={{ delay: i * 0.08 }}
+            className="bg-card border border-border rounded-xl p-6 hover:border-primary/40 transition-colors relative"
           >
+            <Quote className="absolute top-5 right-5 w-8 h-8 text-primary/20" strokeWidth={1.5} />
             <div className="flex gap-1 mb-4">
               {Array.from({ length: t.stars }).map((_, j) => (
-                <Star key={j} className="w-4 h-4 fill-foreground text-foreground" />
+                <Star key={j} className="w-4 h-4 fill-primary text-primary" />
               ))}
             </div>
+            <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-medium mb-4">
+              {t.result}
+            </div>
             <p className="text-foreground/90 font-light mb-6 leading-relaxed">"{t.text}"</p>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-foreground/15 flex items-center justify-center text-foreground text-sm font-medium">
+            <div className="flex items-center gap-3 pt-4 border-t border-border">
+              <div className="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center text-primary text-sm font-medium">
                 {t.name.split(" ").map(n => n[0]).join("")}
               </div>
               <div>
