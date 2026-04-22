@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { AlertTriangle } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const QualificationForm = () => {
   useEffect(() => {
@@ -23,14 +23,14 @@ const QualificationForm = () => {
           className="text-center mb-12"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-6 text-sm">
-            <AlertTriangle className="w-4 h-4 text-primary" />
-            <span className="text-primary font-medium">Últimas vagas — Inscrições encerram em breve</span>
+            <Sparkles className="w-4 h-4 text-primary" />
+            <span className="text-primary font-medium">Diagnóstico 100% gratuito — Vagas limitadas</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-            Garanta sua <span className="text-primary font-normal">Vaga</span>
+            Solicite seu <span className="text-primary font-normal">Diagnóstico Gratuito</span>
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Preencha o formulário para garantir sua vaga no workshop ao vivo do dia 2 de Maio às 14:30 por apenas <span className="text-primary font-medium">R$197</span>. Após o pagamento, você entra no grupo exclusivo da comunidade.
+            Preencha o formulário abaixo e nosso time entrará em contato para identificar os gargalos da sua operação e mostrar como multiplicar suas vendas.
           </p>
         </motion.div>
 

@@ -1,53 +1,78 @@
 import { motion } from "framer-motion";
-import { Search, Target, BarChart3, Rocket } from "lucide-react";
+import { ClipboardCheck, Compass, Rocket, LineChart } from "lucide-react";
+import { Button } from "./ui/button";
 
 const steps = [
-  { icon: Search, title: "Posicionamento", description: "Aprenda a se posicionar como autoridade no mercado de seguros e atrair clientes qualificados." },
-  { icon: Target, title: "Prospecção", description: "Domine técnicas de prospecção ativa e digital para nunca mais depender de indicações." },
-  { icon: BarChart3, title: "Marketing", description: "Crie uma presença digital irresistível com estratégias de conteúdo, anúncios e redes sociais." },
-  { icon: Rocket, title: "Fechamento", description: "Converta mais propostas em vendas com técnicas avançadas de negociação e follow-up." },
+  { icon: ClipboardCheck, title: "Diagnóstico", description: "Analisamos sua operação atual, gargalos de vendas, posicionamento e oportunidades escondidas na sua carteira." },
+  { icon: Compass, title: "Estratégia", description: "Construímos um plano personalizado de marketing, prospecção e fechamento adaptado ao seu ramo de atuação." },
+  { icon: Rocket, title: "Execução", description: "Acompanhamos a implementação semana a semana com mentorias, scripts prontos e ajustes em tempo real." },
+  { icon: LineChart, title: "Escala", description: "Otimizamos cada etapa do funil para multiplicar suas comissões de forma previsível e sustentável." },
 ];
 
-const HowItWorks = () => (
-  <section className="py-24 px-6">
-    <div className="container mx-auto max-w-5xl">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="text-center mb-16"
-      >
-        <h2 className="text-3xl md:text-5xl font-extralight mb-4">
-          O <span className="text-foreground font-normal">Workshop</span>
-        </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">
-          4 pilares estratégicos que você vai dominar no workshop ao vivo do dia 16 de Abril.
-        </p>
-      </motion.div>
+const HowItWorks = () => {
+  const scrollToForm = () => {
+    document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
+  };
 
-      <div className="grid md:grid-cols-4 gap-8">
-        {steps.map((step, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.15 }}
-            className="text-center group"
+  return (
+    <section className="py-24 px-6" id="etapas">
+      <div className="container mx-auto max-w-6xl">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <span className="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-4 block">
+            Como Funciona
+          </span>
+          <h2 className="text-3xl md:text-5xl font-extralight mb-4">
+            As 4 etapas da <span className="text-primary font-normal">Consultoria</span>
+          </h2>
+          <p className="text-muted-foreground max-w-xl mx-auto">
+            Um processo estruturado e validado por mais de 1.000 corretores em todo o Brasil.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {steps.map((step, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.12 }}
+              className="relative bg-card border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors group"
+            >
+              <div className="absolute -top-3 -right-3 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-medium">
+                {i + 1}
+              </div>
+              <div className="w-14 h-14 rounded-xl border border-border bg-background flex items-center justify-center mb-5 group-hover:border-primary/50 transition-colors">
+                <step.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-xl font-light mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground font-light leading-relaxed">{step.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <Button
+            onClick={scrollToForm}
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-10 py-6 text-base"
           >
-            <div className="w-16 h-16 rounded-2xl border border-border bg-card flex items-center justify-center mx-auto mb-5 group-hover:border-foreground/50 transition-colors">
-              <step.icon className="w-7 h-7 text-foreground" strokeWidth={1.5} />
-            </div>
-            <div className="text-xs text-foreground font-medium tracking-widest uppercase mb-2">
-              Pilar {i + 1}
-            </div>
-            <h3 className="text-xl font-light mb-2">{step.title}</h3>
-            <p className="text-sm text-muted-foreground font-light">{step.description}</p>
-          </motion.div>
-        ))}
+            Quero meu diagnóstico gratuito
+          </Button>
+        </motion.div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default HowItWorks;
